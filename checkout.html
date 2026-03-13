@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FreshBites Kiosk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass">
+        <a href="cart.html" class="logo">
+            <i class="fas fa-arrow-left" style="font-size: 1.2rem; margin-right: 5px;"></i> Back to Cart
+        </a>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-container centered-container">
+        <h1 class="section-title">Checkout</h1>
+        
+        <form id="checkout-form" class="checkout-form">
+            <div class="form-group">
+                <label for="customer-name">Full Name</label>
+                <input type="text" id="customer-name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="tel" id="mobile-number" required placeholder="e.g. 555-1234">
+            </div>
+            
+            <div class="form-group">
+                <label for="order-type">Order Type</label>
+                <select id="order-type" required>
+                    <option value="Dine-in">Dine-in</option>
+                    <option value="Takeaway">Takeaway</option>
+                </select>
+            </div>
+
+            <div id="checkout-summary" style="margin-top: 30px; margin-bottom: 20px;">
+                <!-- Order Summary dynamically injected -->
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.2rem;">
+                Confirm Order <i class="fas fa-check"></i>
+            </button>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

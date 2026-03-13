@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | FreshBites Kiosk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass">
+        <a href="menu.html" class="logo">
+            <i class="fas fa-arrow-left" style="font-size: 1.2rem; margin-right: 5px;"></i> Back to Menu
+        </a>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="cart.html" class="floating-cart" aria-label="View Cart">
+                <i class="fas fa-shopping-basket"></i>
+                <span id="cart-badge" class="cart-badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="page-container centered-container">
+        <h1 class="section-title">Order Summary</h1>
+        
+        <div style="display: grid; grid-template-columns: 1fr; gap: 30px;">
+            <!-- Cart Items List -->
+            <div id="cart-items" class="cart-items">
+                <!-- Items injected by JS -->
+            </div>
+
+            <!-- Total & Checkout Btn -->
+            <div class="cart-summary">
+                <div class="summary-row summary-total">
+                    <span>Total Bill:</span>
+                    <span id="cart-total-amount">$0.00</span>
+                </div>
+                <a href="checkout.html" class="btn btn-primary" style="width: 100%; margin-top: 20px; font-size: 1.2rem; padding: 15px;">
+                    Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

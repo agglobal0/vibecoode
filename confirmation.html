@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed | FreshBites Kiosk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass">
+        <a href="index.html" class="logo">
+            <i class="fas fa-home" style="font-size: 1.2rem; margin-right: 5px;"></i> Home
+        </a>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-container confirmation-container">
+        <div class="success-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        
+        <h1 style="font-size: 2.5rem;">Order Successfully Placed!</h1>
+        <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 10px;">Please show your order number at the counter.</p>
+        
+        <div class="order-number" id="order-number-display">
+            <!-- Order # injected here -->
+        </div>
+
+        <div id="confirmation-details">
+            <!-- Confirmation order specifics injected here -->
+        </div>
+
+        <a href="index.html" class="btn btn-outline" style="margin-top: 40px; padding: 15px 40px; font-size: 1.1rem;">
+            Place Another Order
+        </a>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
